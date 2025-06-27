@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>插画师 Sissie 的接稿主页</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #fffdf8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      background-color: #fceae8;
+      padding: 2rem 1rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #777;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #d47a7a;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d47a7a;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .price-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .price-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ddd;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 1rem;
+    }
+
+    .qr {
+      width: 150px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/120" alt="头像" class="avatar" />
+    <h1>Sissie</h1>
+    <p class="tagline">自由插画师｜接稿中</p>
+    <nav>
+      <a href="#gallery">作品</a>
+      <a href="#pricing">价格</a>
+      <a href="#contact">联系我</a>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>🎨 我的作品</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300?text=作品1" alt="作品1" />
+      <img src="https://via.placeholder.com/400x300?text=作品2" alt="作品2" />
+      <img src="https://via.placeholder.com/400x300?text=作品3" alt="作品3" />
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>💰 服务与价格</h2>
+    <ul class="price-list">
+      <li>头像插画：￥100 / 人</li>
+      <li>半身插画：￥150 / 人</li>
+      <li>全身插画：￥200 / 人</li>
+      <li>Q版人物：￥120 / 人</li>
+    </ul>
+    <p class="note">修改2次以内免费，3天内交稿，支持支付宝/微信付款。</p>
+  </section>
+
+  <section id="contact">
+    <h2>📞 联系我</h2>
+    <p>📧 邮箱：sissie@example.com</p>
+    <p>💬 微信：sissie123</p>
+    <p>🐧 QQ：123456789</p>
+    <img src="https://via.placeholder.com/150x150?text=微信二维码" alt="微信二维码" class="qr" />
+  </section>
+
+  <footer>
+    <p>© 2025 Sissie. 本页面使用 GitHub Pages 搭建.</p>
+  </footer>
+</body>
+</html>
