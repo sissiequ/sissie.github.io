@@ -4,106 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>插画师 Sissie 的接稿主页</title>
+
+  <!-- 字体引入 -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Noto+Sans+SC&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: "Helvetica Neue", sans-serif;
-      background-color: #fffdf8;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Orbitron', 'Noto Sans SC', sans-serif;
+      background-image: url('image/conmission\ 4.jpg'); /* 改成你的背景图路径 */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-shadow: 1px 1px 2px black;
     }
 
-    header {
+    header, section, footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2em;
+      margin: 2em auto;
+      border-radius: 15px;
+      max-width: 900px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    h1, h2 {
       text-align: center;
-      background-color: #fceae8;
-      padding: 2rem 1rem;
-    }
-
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      margin: 0.5rem 0 0.2rem;
-      font-size: 2rem;
+      font-weight: 600;
+      color: #ffccff;
     }
 
     .tagline {
-      font-size: 1rem;
-      color: #777;
+      text-align: center;
+      font-size: 1.2em;
+      color: #ffe4ff;
     }
 
     nav {
-      margin-top: 1rem;
+      text-align: center;
+      margin-top: 1em;
     }
 
     nav a {
-      margin: 0 10px;
+      color: #ffd1f5;
       text-decoration: none;
-      color: #d47a7a;
-      font-weight: bold;
+      margin: 0 1.5em;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
     }
 
-    section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
+    nav a:hover {
+      color: #ffffff;
     }
 
-    h2 {
-      color: #d47a7a;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+    .avatar {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      border-radius: 50%;
+      border: 4px solid #fff;
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1em;
     }
 
     .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     .price-list {
       list-style: none;
-      padding-left: 0;
-    }
-
-    .price-list li {
-      padding: 0.5rem 0;
-      border-bottom: 1px dashed #ddd;
+      padding: 0;
+      font-size: 1.1em;
+      line-height: 2em;
+      text-align: center;
     }
 
     .note {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 1em;
+    }
+
+    #contact p {
+      text-align: center;
+      margin: 0.5em 0;
     }
 
     .qr {
+      display: block;
+      margin: 1em auto;
       width: 150px;
-      margin-top: 1rem;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.8rem;
-      color: #999;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="image/Conmission 1.jpg"" alt="成男半身" class="avatar" />
+    <img src="image/Conmission 1.jpg" alt="成男半身" class="avatar" />
     <h1>Sissie</h1>
     <p class="tagline">自由插画师｜接稿中</p>
     <nav>
